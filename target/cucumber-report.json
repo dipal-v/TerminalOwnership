@@ -1,0 +1,58 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 3,
+        "name": "User should be able to get Terminal Owner",
+        "description": "",
+        "id": "esb-microservice-to-get-the-correct-terminal-owner-for-given-imsi;user-should-be-able-to-get-terminal-owner",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3531646858,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User gets response for terminal id \u0027901112118097036\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "901112118097036",
+                  "offset": 36
+                }
+              ],
+              "location": "MyStepdefs.userGetsResponseForTerminalId(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 59644077,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "He should get response code \u0027200\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 29
+                }
+              ],
+              "location": "MyStepdefs.heShouldGetResponseCode(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "ESB microservice to get the correct terminal owner for given IMSI",
+    "description": "",
+    "id": "esb-microservice-to-get-the-correct-terminal-owner-for-given-imsi",
+    "keyword": "Feature",
+    "uri": "terminalOwnership.feature"
+  }
+]
