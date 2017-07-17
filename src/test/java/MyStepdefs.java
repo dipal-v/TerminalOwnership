@@ -7,16 +7,16 @@ import cucumber.api.java.en.When;
 public class MyStepdefs {
 
 
-        MyfirstMethod myfirstmethod = new MyfirstMethod();
+        MyfirstMethod Myfirstmethod = new MyfirstMethod();
 
         @When("^User gets response for terminal id '(.+)'$")
         public void userGetsResponseForTerminalId(String terminalID) {
-            myfirstmethod.getterminalID(terminalID);
+            Myfirstmethod.getterminalID(terminalID);
         }
 
         @Then("^He should get response code '(.+)'$")
         public void heShouldGetResponseCode(int responseCode)  {
-            myfirstmethod.verifyResponsecode(responseCode);
+            Myfirstmethod.verifyResponsecode(responseCode);
         }
     }
 

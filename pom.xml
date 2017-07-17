@@ -11,7 +11,6 @@
 
     <dependencies>
 
-
         <dependency>
             <groupId>com.jayway.restassured</groupId>
             <artifactId>rest-assured</artifactId>
@@ -43,7 +42,21 @@
         </dependency>
 
 
+
+
     </dependencies>
+
+    <!-- Required for Enforcing Java 8 -->
+    <plugins>
+    <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.3</version>
+        <configuration>
+            <source>1.8</source>
+            <target>1.8</target>
+        </configuration>
+    </plugin>
+    </plugins>
 
 
 </project>
